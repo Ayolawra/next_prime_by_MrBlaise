@@ -4,7 +4,6 @@
 # Generate prime numbers until
 # the user chooses to stop
 
-
 def isPrime(x):
     """
     Checks whether the given number x is prime or not
@@ -16,8 +15,8 @@ def isPrime(x):
     if x % 2 == 0:
         return False
 
-    for i in range(3, int(x**0.5)+1, 2):
-        if x % i == 0:
+    for i in range(3, int(x**0.5)+1, 2): #here is the secret sauce (!!!)
+        if x % i == 0: #you take every i up to x and iterrogate that x. Why the square root?
             return False
 
     return True
@@ -57,15 +56,4 @@ def main():  # Wrapper function
 
 if __name__ == '__main__':
     main()
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+y
